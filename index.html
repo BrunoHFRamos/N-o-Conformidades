@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Não Conformidades Zagonel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Controle de Não Conformidades Zagonel</h1>
+
+  <div class="formulario">
+    <label>Nome do Fornecedor:</label>
+    <input id="nome_fornecedor" type="text" placeholder="Digite o nome do fornecedor">
+
+    <label>Sequência de numeração RNC:</label>
+    <input id="seq_numeracao" type="text" placeholder="Ex: RNC-001">
+
+    <label>Descrição do problema:</label>
+    <textarea id="descricao" placeholder="Descreva brevemente o problema"></textarea>
+
+    <label>Data da RNC:</label>
+    <input id="data" type="date">
+
+    <button onclick="cadastrar()">Cadastrar</button>
+  </div>
+
+  <h2>Lista de Não Conformidades</h2>
+  <div id="lista"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
